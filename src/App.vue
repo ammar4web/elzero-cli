@@ -1,10 +1,17 @@
+<script>
+import AppHeaderVue from "@/components/global/AppHeaderVue.vue"
+
+export default {
+  name: "App",
+  components: {
+    AppHeaderVue,
+  }
+}
+</script>
+
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/help">Help</router-link>
-    </nav>
+    <app-headerVue/>
     <router-view/>
   </div>
 </template>
